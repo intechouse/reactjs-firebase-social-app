@@ -1,10 +1,25 @@
 import React from 'react';
+import { Container } from '@mui/material';
+import LoginCard from '../components/LoginCard';
 
+const containerStyle = {
+  height: '694px !important',
+  backgroundColor: '#fb8c00',
+  margin: '0px',
+  paddingTop: 6,
+  display: 'flex',
+  flexDirection: 'row-reverse',
+};
 const Login = () => {
   return (
-    <div>
-      <h1>Login</h1>
-    </div>
+    <Container
+      maxWidth='xl'
+      sx={{
+        ...containerStyle,
+      }}
+    >
+      <LoginCard />
+    </Container>
   );
 };
 
